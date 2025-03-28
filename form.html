@@ -1,68 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
     <link rel="stylesheet" href="form.css">
-</head>
-<body>
-    <div class="container">
-        <h1 class="form-title">Registration</h1>
-        <form action="#">
-            <div class="main-user-info">
-                <div class="user-input-box">
-                    <label for="fullname">Full name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="enter name">
+ </head>
+ <body>
+  <div class="form">
+         Field up <br><br>
+     <form name="form" action="index.html" onsubmit="return validation()">
+         <div class="name" >
+            Name:<input type="textbox" placeholder=" Enter your name" name="name">
+         </div><br/>
+         <div class="concat">
+            Concat:<input type="text"placeholder=" Enter your number" name="number">
+         </div><br>
+         <div class="email">
+            Email:<input type="email" placeholder=" Enter your email" name="email"><br> 
+         </div><br>
+         <div class="password">
+            Password:<input type="password" placeholder=" Enter your password" name="password">
+         </div><br>
+         <div class="conform_password">
+            Conform Password:<input type="password" placeholder=" Conform your password" name="conform_password">
+         </div><br>
+         <div class="gender">
+            <span class="gender-title">Gender</span><br>
+            <input type="radio" name="gender" value="male" >
+            <label for="male"> Male</label><br>
+            <input type="radio" name="gender" value="female" >
+            <label for="female"> Female</label><br>
+            <input type="radio" name="gender" value="other" >            <label for="female"> Other</label>
+         </div><br>
+         <div class="login">
+            <input type="submit" value="Login">
+         </div>
+      </form>
+  </div>
 
-                </div>
-                <div class="user-input-box">
-                    <label for="username">User name</label>
-                    <input type="text" id="username" name="username" placeholder="enter username">
-                    
-                </div>
-                <div class="user-input-box">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="enter email">
-                    
-                </div>
-                <div class="user-input-box">
-                    <label for="phonenumber">Phone Number </label>
-                    <input type="text" id="phonenumber" name="phonenumber" placeholder="enter phone number">
-                    
-                </div>
-                <div class="user-input-box">
-                    <label for="password">Password </label>
-                    <input type="text" id="password" name="password" placeholder="enter password">
-                    
-                </div>
-                <div class="user-input-box">
-                    <label for="confirmpassword">Confirm Password</label>
-                    <input type="text" id="confirmpassword" name="confirmpassword" placeholder="enter confirm password">
-                    
-                </div>
-                
-            </div>
-            <div class="hender-details-box">
-                <span class="gender-title">Gender</span>
-                <div class="gender-category">
-                    <input type="radio" name="gender" id="male" >
-                    <label for="male"> Male</label>
-                    <input type="radio" name="gender" id="female" >
-                    <label for="female"> Female</label>
-                    <input type="radio" name="gender" id="other" >
-                    <label for="other"> Other</label>
-                </div>
-            </div>
-            <div class="form-submit-btn">
-                <input type="submit" value="Register">
-            </div>
-            <div class="subash">
-                <button>JFT Nepal</button> 
-            </div>
-        </body>
-        </form>
-    </div>
-   
+  <script src="form.js"></script>
+ </body>
 </html>
